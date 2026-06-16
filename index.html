@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-    <title>Prima mea pagină</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meniu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f3ef;
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+    font-family:'Montserrat',sans-serif;
+}
+
+.menu{
+    width:420px;
+    max-width:100%;
+    background:white;
+    padding:60px 35px;
+    position:relative;
+    color:#b28b60;
+    text-align:center;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+}
+
+.corner-top,
+.corner-bottom{
+    position:absolute;
+    font-size:90px;
+    color:#d8c2a3;
+    opacity:0.6;
+    line-height:1;
+}
+
+.corner-top{
+    top:10px;
+    left:10px;
+}
+
+.corner-bottom{
+    bottom:10px;
+    right:10px;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section-title{
+    font-family:'Great Vibes',cursive;
+    font-size:52px;
+    margin-bottom:15px;
+    font-weight:normal;
+}
+
+.item{
+    font-size:24px;
+    line-height:1.8;
+    font-weight:300;
+}
+
+@media(max-width:600px){
+
+    .menu{
+        padding:40px 20px;
+    }
+
+    .section-title{
+        font-size:42px;
+    }
+
+    .item{
+        font-size:20px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>Salut!</h1>
-    <p>Aceasta este prima mea pagină pe GitHub Pages.</p>
+
+<div class="menu">
+
+    <div class="corner-top">❀</div>
+    <div class="corner-bottom">❀</div>
+
+    <div class="section">
+        <h2 class="section-title">Aperitiv</h2>
+
+        <div class="item">Ruladă de cașcaval</div>
+        <div class="item">Chifteluță de porc</div>
+        <div class="item">Mini șnițel</div>
+        <div class="item">Frigărui de măsline</div>
+        <div class="item">Ruladă de porc cu legume</div>
+        <div class="item">Buseuri cu vinete</div>
+        <div class="item">Terină cu brânză fină și sfeclă</div>
+        <div class="item">Pachețele de primăvară</div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Ciorbă</h2>
+
+        <div class="item">Ciorbă a la grec de pui</div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Fel principal</h2>
+
+        <div class="item">Tivoli de pui</div>
+        <div class="item">Ceafă de porc sous-vide</div>
+        <div class="item">Cartofi gratinați</div>
+        <div class="item">Baby morcovi</div>
+        <div class="item">Broccoli</div>
+        <div class="item">Salată asortată</div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Desert</h2>
+
+        <div class="item">Felie de tort</div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Cină</h2>
+
+        <div class="item">Pulpă de pui dezosată</div>
+        <div class="item">Cu sos de usturoi și măgheran</div>
+        <div class="item">Cartofi la cuptor</div>
+    </div>
+
+</div>
+
 </body>
 </html>
